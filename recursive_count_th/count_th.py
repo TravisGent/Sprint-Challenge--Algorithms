@@ -10,3 +10,31 @@ def count_th(word):
             count += 1
         count += count_th(word[1:])
     return count
+
+# count = # 1 # thth
+# if len(word) >= 2:
+#     if word[0] + word[1] == "th":
+#         count += 1
+#     count += #count_th(word[1:])
+# 
+#         count = # 0 # hth
+#         if len(word) >= 2:
+#             if word[0] + word[1] == "th":
+#                 count += 1
+#             count += #count_th(word[1:])
+# 
+#                 count = # 1 # th
+#                 if len(word) >= 2:
+#                     if word[0] + word[1] == "th":
+#                         count += #count_th(word[1:])
+#                     count += 0
+#                 return count
+# 
+#                     count = # 0 # h 
+#                     if len(word) >= 2:
+#                         if word[0] + word[1] == "th":
+#                             count += 0
+#                         count += 0
+#                     return count
+#         return count
+# return count

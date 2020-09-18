@@ -35,4 +35,4 @@ Suppose that you have an n-story building and plenty of eggs. Suppose also that 
 
 Write out your proposed algorithm in plain English or pseudocode AND give the runtime complexity of your solution.
 
-I would write a algorithm that would essentially pass in values in multiples of ten starting from one. i.e. 1, 10, 100, 1000, 10000 and so on. I would see how many loops it would take before it takes longer than 10 seconds or so. I would probably limit it to only do 10 or 15 multiples because by then the numbers should be big enough to give us good results. I really don't see this causing any real big problems or taking a whole lot of time in my algarithm, but it might take a bit in others. So O(n)
+I would take a list of floor values and go through them by binary search. Start at the half, see if it break or not, if it does, do let side half if not right side half. And I would keep going until I found best floor value.

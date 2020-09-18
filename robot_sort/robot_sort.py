@@ -97,7 +97,14 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+        # grab item and compares to next item
+        # if next item is smaller, turn light on and swap their places
+        # when light is on move all the way to the left until can_move_left returns false, then turn light off
+        # when light is off compare items, if can't swap, try next iteration
+        if self.compare_item() == None and self.can_move_right() == False:
+            pass
+        if self.compare_item() == None and self.can_move_right() == True:
+            self.swap_item()
 
 
 if __name__ == "__main__":
